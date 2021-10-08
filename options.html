@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <link href="css/fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/options.css" />
+</head>
+
+<body class="options">
+    <section class="section" style="padding-top: 10px">
+        <form class="options__container">
+            <div>
+                <h3 class="options__title">
+                    My tokens
+                    <i class="fab fa-bitcoin options__icon"></i>
+                </h3>
+                <div class="options__currencies">
+                    <label class="options__currencies-label">You currency: </label>
+                    <select class="options__currencies-select" id="currencies" name="currencies"></select>
+                </div>
+                <ul class="options__user-tokens" id="userTokenList"></ul>
+            </div>
+            <div>
+                <label class="options__datalist-label">Add a crypto to your list: <input class="options__datalist-input" id="inputList" list="cryptoList" name="crypto" /></label>
+                <datalist class="options__datalist" id="cryptoList"> </datalist>
+            </div>
+            <div class="options__footer">
+                <div class="options__footer-action">
+                    <button class="options__submit" type="button" id="option-btn-save">Save</button>
+                    <span class="options__reminder"><i class="fas fa-exclamation-triangle"></i>
+                        Don´t forget save when finish! </span>
+                </div>
+            </div>
+            <div id="alert-msj" class="options__alert">
+                <p id="alert-msj-text" class="options__alert-msj"></p>
+            </div>
+        </form>
+        <script type="text/javascript" src="scripts/getAsyncStorageProp.js"></script>
+        <script type="text/javascript" src="scripts/apiCalls.js"></script>
+        <script type="text/javascript" src="scripts/options/setAlert.js"></script>
+        <script type="text/javascript" src="scripts/options/saveForm.js"></script>
+        <script type="text/javascript" src="scripts/options/loadCryptos.js"></script>
+        <script type="text/javascript" src="scripts/options/loadCurrencies.js"></script>
+        <script type="text/javascript" src="scripts/options/addCryptoToUserList.js"></script>
+        <script type="text/javascript" src="scripts/options/loadUserTokens.js"></script>
+        <script type="text/javascript" src="scripts/options/userTokensActions.js"></script>
+</body>
+
+</html>

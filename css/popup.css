@@ -1,0 +1,112 @@
+@import 'keyFrames.css';
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__title {
+  color: white;
+}
+
+.popup__title-icon {
+  color: #e0850c;
+  margin-left: 4px;
+}
+
+#list-tokens {
+  list-style: none;
+  margin: 0;
+  padding: 12px 0px;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 6px;
+}
+
+.list-token__li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation: fadeIn 1s ease;
+  padding: 12px 6px;
+  margin: 0 6px;
+  border-radius: 5px;
+  background: #dddddd;
+}
+
+.list-token__content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.list-token__img-wrapper {
+  padding: 4px;
+  border-radius: 5%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.list-token__title {
+  font-size: 15px;
+  margin-left: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 40px;
+}
+
+.list-token__price {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: 12px;
+  text-transform: uppercase;
+}
+
+.list-token__prince-change {
+  font-size: 12px;
+  margin-left: 4px;
+  font-weight: bold;
+}
+
+.list-token__prince-change--positive {
+  color: #05610a;
+}
+
+.list-token__prince-change--negative {
+  color: #961d0d;
+}
+
+.list-token__values {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-cog-icon {
+  font-size: 15px;
+  color: #e0850c;
+  right: 24px;
+  cursor: pointer;
+  transition: 2.5s ease all;
+}
+
+.custom-cog-icon:hover {
+  transform: rotateZ(360deg);
+}
+
+.custom-cog-icon__container {
+  position: absolute;
+  right: 24px;
+  padding: 12px 0;
+}
+
+.popup__currency {
+  color: white;
+  padding: 12px;
+  right: 24px;
+}

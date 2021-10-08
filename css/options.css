@@ -1,0 +1,152 @@
+@import 'keyFrames.css';
+
+.options {
+  background: white;
+  max-width: 600px;
+  margin: auto;
+}
+
+.options__container {
+  background: #4e5048;
+  padding: 24px;
+  color: white;
+  border-radius: 15px;
+}
+
+.options__title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.options__icon {
+  margin-left: 4px;
+  color: #c9bc06;
+  font-size: 17px;
+}
+
+.options__currencies {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.options__currencies-label {
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+.options__currencies-select {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.options__user-tokens {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 12px;
+  font-size: 15px;
+  color: black;
+}
+
+.options__user-token {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  margin: 6px;
+  font-size: 15px;
+  background: #dfdbdb;
+  border-radius: 5px;
+}
+
+.options__user-token-data {
+  padding: 0 4px;
+}
+
+.options_user-token-symbol {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.options__user-token-actions {
+  margin-left: 12px;
+}
+
+.options__user-token-actions i {
+  padding: 0 4px;
+  transition: 0.5s ease all;
+  cursor: pointer;
+}
+
+.options__user-token-actions i:hover {
+  transform: scale(1.2);
+}
+
+.options__user-token-actions i.fa-trash-alt {
+  color: #bd0404;
+}
+
+.options__datalist-label {
+  font-size: 15px;
+}
+
+.options__datalist-input {
+  font-size: 15px;
+  padding: 8px;
+  margin-left: 12px;
+  border-radius: 5px;
+  border: none;
+
+}
+
+.options__datalist {
+  overflow-y: auto;
+}
+
+.options__footer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0px 12px;
+  margin-top: 24px;
+}
+
+.options__footer-action {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 0;
+}
+
+.options__reminder {
+  font-size: 11px;
+  color: #e99700;
+  margin-top: 8px;
+}
+
+.options__submit {
+  cursor: pointer;
+  background: #070bf7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 18px;
+  transition: 0.5s ease all;
+}
+
+.options__submit:hover {
+  transform: scale(1.1);
+}
+
+.options__alert {
+  display: none;
+}
+
+.options__alert-msj {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
