@@ -1,4 +1,4 @@
-@import 'keyFrames.css';
+@import "keyFrames.css";
 
 .header {
   display: flex;
@@ -64,6 +64,8 @@
   font-weight: bold;
   margin-left: 12px;
   text-transform: uppercase;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .list-token__prince-change {

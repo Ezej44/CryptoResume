@@ -150,3 +150,18 @@
   font-weight: bold;
   text-align: center;
 }
+.options__final{
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.options .fa-heart{
+  color: #bd0404;
+}
+.options__final a i {
+  margin-top: 1px;
+  font-size: 18px;
+}
