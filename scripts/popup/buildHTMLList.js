@@ -10,11 +10,13 @@ const builListItem = (tokenInfo, currency) => {
         "list-token__prince-change list-token__prince-change--positive" :
         "list-token__prince-change list-token__prince-change--negative";
 
+    const urlRedirect = `https://www.coingecko.com/en/coins/${tokenInfo.id}`;
+
     const tempElement = document.createElement("div");
     tempElement.innerHTML = `<li class="list-token__li">
     <div class="list-token__content">
       <div class="list-token__img-wrapper">
-      <img class="list-token__img" src="${tokenInfo.image.thumb}"></img>
+      <a target="_blank" href=${urlRedirect}><img class="list-token__img" src="${tokenInfo.image.thumb}"></img></a>
       </div>
       <span class="list-token__title">${tokenInfo.symbol}</span>
     </div>
