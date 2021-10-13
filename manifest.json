@@ -1,7 +1,7 @@
 {
   "name": "Crypto resume",
-  "description": "Small extension for save your cryptos and look his current price",
-  "version": "1.0.2",
+  "description": "Small extension for saving your favorite cryptos and see their current price",
+  "version": "1.0.4",
   "manifest_version": 3,
   "background": {
     "service_worker": "background.js"

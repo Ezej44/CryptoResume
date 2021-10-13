@@ -8,6 +8,11 @@
 
 .header__title {
   color: white;
+  display: flex;
+  align-items: center;
+}
+.header__img{
+  margin-left: 6px;
 }
 
 .popup__title-icon {
